@@ -1,12 +1,14 @@
 Package: iMES
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Index of methylation-based epigenetic silencing
+Version: 0.99.1
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person(given = "Xiaofan",
+           family = "Lu",
+           role = c("aut", "cre"),
+           email = "xlu.cpu@foxmail.com",
+           comment = c(ORCID = "0000-0003-2417-6548"))
+Description: This function calculates an index of methylation-based epigenetic silencing (iMES) using binary DNA methylation status for patients with clear cell renal cell carcinoma.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.2
