@@ -26,7 +26,7 @@ devtools::install_github("xlucpu/iMES")
 ``` r
 ## basic example code (not run)
 library(iMES)
-methMat <- read.table("DNA methylation beta matrix.txt",,sep = "\t",check.names = F,row.names = 1,header = T,stringsAsFactors = F)
+methMat <- read.table("DNA methylation beta matrix.txt",sep = "\t",check.names = F,row.names = 1,header = T,stringsAsFactors = F)
 iMES <- iMES(bmat     = methMat, # a DNA methylation beta matrix with continuous values as input
              methcut  = 0.2, # cut continuous methylation matrix to binary methylation status
              samples  = colnames(methMat)[1:30], # extract the first 30 samples to calculate iMES
