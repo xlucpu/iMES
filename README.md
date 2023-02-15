@@ -1,10 +1,11 @@
-
 # iMES
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of iMES is to ...
+## Introduction
+
+This package provides a function to calculates an index of methylation-based epigenetic silencing (iMES) using binary DNA methylation status for patients with clear cell renal cell carcinoma.
 
 ## Installation
 
@@ -16,11 +17,12 @@ devtools::install_github("xlucpu/iMES")
 ```
 
 ## Example
-
-This is a basic example which shows you how to solve a common problem:
-
 ``` r
+## basic example code (not run)
 library(iMES)
-## basic example code
+methMat <- read.table("DNA methylation beta matrix.txt",,sep = "\t",check.names = F,row.names = 1,header = T,stringsAsFactors = F)
+iMES <- iMES(bmat     = methMat, # a DNA methylation beta matrix with continuous values as input
+             samples  = colnames(methMat)[1:30], # extract the first 30 samples to calculate iMES
+             quantile = 3) # dichotomize samples into iMES-high and iMES-low based on a general tertile cutoff
 ```
 
