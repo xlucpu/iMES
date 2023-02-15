@@ -8,7 +8,7 @@
 #' @param samples A string value to indicate the samples that will be used to calculate iMES; all samples will be used by default.
 #' @param quantile A numeric value to indicate quantile base to dichotomize samples into iMES-high and iMES-low; 3 (tertile) by default.
 #'
-#' @return
+#' @return A DataFrame with rownames of samples and three columns: iMES (raw iMES score), iMES.mm (minmax normalized iMES score), iMES.group (dichotomized iMES group)
 #' @export
 #' @importFrom lsr quantileCut
 iMES <- function(bmat     = NULL,

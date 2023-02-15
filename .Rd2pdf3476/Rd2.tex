@@ -1,0 +1,34 @@
+\nonstopmode{}
+\documentclass[a4paper]{book}
+\usepackage[times,inconsolata,hyper]{Rd}
+\usepackage{makeidx}
+\usepackage[utf8]{inputenc} % @SET ENCODING@
+% \usepackage{graphicx} % @USE GRAPHICX@
+\makeindex{}
+\begin{document}
+\chapter*{}
+\begin{center}
+{\textbf{\huge Package `iMES'}}
+\par\bigskip{\large \today}
+\end{center}
+\inputencoding{utf8}
+\ifthenelse{\boolean{Rd@use@hyper}}{\hypersetup{pdftitle = {iMES: Index of methylation-based epigenetic silencing}}}{}
+\ifthenelse{\boolean{Rd@use@hyper}}{\hypersetup{pdfauthor = {Xiaofan Lu}}}{}
+\begin{description}
+\raggedright{}
+\item[Title]\AsIs{Index of methylation-based epigenetic silencing}
+\item[Version]\AsIs{0.99.1}
+\item[Description]\AsIs{This function calculates an index of methylation-based epigenetic silencing (iMES) using binary DNA methylation status for patients with clear cell renal cell carcinoma.}
+\item[License]\AsIs{MIT + file LICENSE}
+\item[Encoding]\AsIs{UTF-8}
+\item[Roxygen]\AsIs{list(markdown = TRUE)}
+\item[RoxygenNote]\AsIs{7.2.2}
+\item[Depends]\AsIs{R (>= 4.0.1)}
+\item[Suggests]\AsIs{knitr,
+rmarkdown,
+testthat (>= 3.0.0)}
+\item[Config/testthat/edition]\AsIs{3}
+\item[VignetteBuilder]\AsIs{knitr}
+\item[Imports]\AsIs{lsr}
+\end{description}
+\Rdcontents{\R{} topics documented:}
