@@ -16,7 +16,7 @@ iMES(bmat = NULL, methcut = 0.2, samples = NULL, quantile = 3)
 \item{quantile}{A numeric value to indicate quantile base to dichotomize samples into iMES-high and iMES-low; 3 (tertile) by default.}
 }
 \value{
-A DataFrame with rownames of samples and three columns: iMES (raw iMES score), iMES.mm (minmax normalized iMES score), iMES.group (dichotomized iMES group)
+A DataFrame with rownames of samples and three columns: iMES (raw iMES score), iMES.mm (minmax normalized iMES score * 10; range from 0-10), iMES.group (dichotomized iMES group)
 }
 \description{
 This function calculates an index of methylation-based epigenetic silencing (iMES) using binary DNA methylation status for patients with clear cell renal cell carcinoma.
