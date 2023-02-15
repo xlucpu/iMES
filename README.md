@@ -5,7 +5,7 @@
 
 ## Introduction
 
-This package provides a function to calculates an index of methylation-based epigenetic silencing (iMES) using binary DNA methylation status for patients with clear cell renal cell carcinoma.
+This package provides a function to calculate an index of methylation-based epigenetic silencing (iMES) using binary DNA methylation status for patients with clear cell renal cell carcinoma.
 
 ## Citation
 
