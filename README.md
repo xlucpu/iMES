@@ -22,6 +22,7 @@ devtools::install_github("xlucpu/iMES")
 library(iMES)
 methMat <- read.table("DNA methylation beta matrix.txt",,sep = "\t",check.names = F,row.names = 1,header = T,stringsAsFactors = F)
 iMES <- iMES(bmat     = methMat, # a DNA methylation beta matrix with continuous values as input
+             methcut  = 0.2, # cut continous methylation matrix to binary methylation status
              samples  = colnames(methMat)[1:30], # extract the first 30 samples to calculate iMES
              quantile = 3) # dichotomize samples into iMES-high and iMES-low based on a general tertile cutoff
 ```
