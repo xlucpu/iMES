@@ -5,7 +5,7 @@
 
 ## Introduction
 
-This package provides a function to calculate an index of methylation-based epigenetic silencing (iMES) using binary DNA methylation status for patients with clear cell renal cell carcinoma.
+This package provides a function to calculate an index of methylation-based epigenetic silencing (iMES) using binary DNA methylation status for patients with clear cell renal cell carcinoma. The main function iMES() returns a DataFrame with row names of samples and three columns: iMES (raw iMES score), iMES.mm (min-max normalized iMES score * 10; range from 0-10), iMES.group (dichotomized iMES group by customized quantile cut-off). Patients with high iMES or were categorized in the iMES-high group may have a higher likelihood of developing immune invasion and being resistant to immune checkpoint inhibitors.
 
 ## Citation
 
