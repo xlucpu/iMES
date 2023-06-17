@@ -31,6 +31,7 @@ You can install the development version of iMES from [GitHub](https://github.com
 ``` r
 # install.packages("devtools")
 devtools::install_github("xlucpu/iMES")
+``` r
 
 ## Example <a name="example"></a>
 ``` r
@@ -54,3 +55,4 @@ regulon <- predRegulon(emat     = exprMat,
                        seed     = 20000112, # seed to reproduce K-mode clustering (k = 2)
                        fig.path = getwd(), # path to save regulon activity heatmap
                        fig.name = "heatmap of regulon activity") # name of the regulon activity heatmap
+``` r
