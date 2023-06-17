@@ -11,6 +11,7 @@
 #' @return A DataFrame with rownames of samples and three columns: iMES (raw iMES score), iMES.mm (minmax normalized iMES score * 10; range from 0-10), iMES.group (dichotomized iMES group)
 #' @export
 #' @importFrom lsr quantileCut
+#'
 iMES <- function(bmat     = NULL,
                  methcut  = 0.2,
                  samples  = NULL,
