@@ -31,3 +31,26 @@ You can install the development version of iMES from [GitHub](https://github.com
 ``` r
 # install.packages("devtools")
 devtools::install_github("xlucpu/iMES")
+
+## Example <a name="example"></a>
+``` r
+## basic example code (not run)
+library(iMES)
+# Reading DNA methylation beta matrix
+methMat <- read.delim("DNA methylation beta matrix.txt",sep = "\t",check.names = F,row.names = 1,header = T,stringsAsFactors = F)
+
+# Calculate iMES
+iMES <- iMES(bmat     = methMat, # a DNA methylation beta matrix with continuous values as input
+             methcut  = 0.2, # cut continuous methylation matrix to binary methylation status
+             samples  = colnames(methMat)[1:30], # extract the first 30 samples to calculate iMES
+             quantile = 3) # dichotomize samples into iMES-high and iMES-low based on a general tertile cutoff
+
+# Reading Transcriptomic expression matrix
+exprMat <- read.delim("Transcriptomic expression matrix.txt",sep = "\t",check.names = F,row.names = 1,header = T,stringsAsFactors = F)	
+
+# Calculate regulon activity
+regulon <- predRegulon(emat     = exprMat,
+                       samples  = colnames(exprMat)[1:30], # extract the first 30 samples to calculate regulon activity
+                       seed     = 20000112, # seed to reproduce K-mode clustering (k = 2)
+                       fig.path = getwd(), # path to save regulon activity heatmap
+                       fig.name = "heatmap of regulon activity") # name of the regulon activity heatmap
