@@ -21,9 +21,9 @@ The secondary function, `predRegulon()`, assesses the regulon activity status fo
 Patients with high iMES scores or those categorized in the iMES-high group are potentially at an increased risk of immune evasion and resistance to immune checkpoint inhibitors. The regulon phenotype classified as suppressed is considered to correspond to the iMES-high group, while an activated regulon phenotype is analogous to the iMES-low group.
 
 ## Citation <a name="citation"></a>
-As iMES paper has not been published, if you use iMES R package in published research, for now please cite:
+If you use iMES in published research, please cite:
 
-  - Lu X, Vano Y, Helleux A, Su X, Lindner V, Davidson G, Mouawad R, Spano JP, Roupret M, Elaidi R, Comp&eacute;rat E, Verkarre V, Sun C, Chevreau C, Bennamoun M, Lang H, Tricard T, Cheng W, Xu L, Davidson I, Yan F, Fridman WH, Sautes-Fridman C, Oudard S, Malouf GG. An enhancer demethylator phenotype converged to immune dysfunction and resistance to immune checkpoint inhibitors in clear-cell renal cell carcinomas. Clin Cancer Res. 2022 Nov 14:CCR-22-2133. doi: 10.1158/1078-0432.CCR-22-2133.
+  - Lu X, Vano YA, Su X, Helleux A, Lindner V, Mouawad R, Spano JP, Rouprêt M, Compérat E, Verkarre V, Sun CM, Bennamoun M, Lang H, Barthelemy P, Cheng W, Xu L, Davidson I, Yan F, Fridman WH, Sautes-Fridman C, Oudard S, Malouf GG. Silencing of genes by promoter hypermethylation shapes tumor microenvironment and resistance to immunotherapy in clear-cell renal cell carcinomas. <i>Cell Rep Med</i>. 2023;4(11):101287. doi: 10.1016/j.xcrm.2023.101287.
 
 ## Installation <a name="installation"></a>
 You can install the development version of iMES from [GitHub](https://github.com/) with:
